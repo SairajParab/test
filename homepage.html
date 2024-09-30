@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakshi Sayys - Free Daily Report</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><img src="./ChillarImages\heading.png" alt="SAKSHI SAYYS"></h1>
+        <div class="menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <div class="container">
+       <center>
+        <div class="img2">
+            <img src="./ChillarImages\h2.png" alt="get your daily report">
+                </div>
+       </center>
+        <div class="additional-content">
+            <div class="img3">
+                <img src="./ChillarImages\sub_heading.png" alt="facts about book">
+                <div class="text-overlay">
+                    <button class="cta-button" id="getReportBtn"><div class="text-btn">GET NOW</div></button>
+                </div>
+            </div> 
+                    <div class="test"><img src="./ChillarImages/didi.png" alt="Image of Sakshi Sayys"></div>
+            
+            
+    </div>
+
+    <!-- First pop-up -->
+    <div id="popupOverlay" class="popup-overlay">
+        <div class="popup-content">
+            <center><img src="./ChillarImages\ul1.png" alt="YOUR REPORT ON THE WAY"></center>
+            <form id="reportForm">
+                <input type="text" name="firstName" placeholder="First Name" required>
+                <input type="text" name="surname" placeholder="Surname" required>
+                <select name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <input type="email" name="email" placeholder="Email ID" required>
+                <input type="tel" name="whatsapp" placeholder="WhatsApp Number" required>
+                <input type="date" name="dob" placeholder="Date of Birth" required>
+                <button type="submit">Generate Now</button>
+            </form>
+        </div>
+    </div>
+    
+        <!-- Second pop-up (confirmation) -->
+    <div id="confirmationPopup" class="popup-overlay">
+        <div class="popup-content">
+                <h2>YOUR REPORT</h2>
+                <h1>IS ON ITS WAY</h1>
+                <p>YOU'LL RECEIVE YOUR REPORT VIA WHATSAPP AND EMAIL WITHIN 5 MINUTES. THANK YOU!</p>
+            <div id="reportStats">
+                <span id="reportCount">10000</span>
+                <div>Reports Generated</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
